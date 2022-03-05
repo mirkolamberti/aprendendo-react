@@ -1,8 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './meus-componentes/HelloWorld';
 
 function App() {
   return (
+    <HelloWorld />
+  );
+}
+
+export default App;
+
+/*
+**
+** Código original após instalar App React
+
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,7 +30,5 @@ function App() {
         </a>
       </header>
     </div>
-  );
-}
 
-export default App;
+*/
