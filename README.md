@@ -1,3 +1,10 @@
+# Aprendendo React from 0
+
+Link úteis:
+- Vídeo de introdução "5 desafios" (Canal Filipe Deschamps): https://youtu.be/aJR7f45dBNs
+- Playlist "Curso de React" (Canal Matheus Battisti - Hora de Codar): https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
