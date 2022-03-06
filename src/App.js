@@ -8,6 +8,8 @@ import FrasePropriedades1 from './components/FrasePropriedade1';
 import FrasePropriedades2 from './components/FrasePropriedade2';
 import ListaFragment from './components/ListaFragment';
 import PropriedadeTipos from './components/PropriedadeTipos';
+import Evento1 from './components/Evento1';
+import Evento2 from './components/Evento2';
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
     <Menu />
       <header className="App-header">
         <div><HelloWorld /></div>
+        <p><Evento1 msg="Até mais!" /></p>
         <span><ListaFragment /></span>
         <span>
           <PropriedadeTipos nome="Mirko" idade={25} />
@@ -43,6 +46,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Evento2 />
     </div>
   );
 }
