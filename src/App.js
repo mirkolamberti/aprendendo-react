@@ -10,6 +10,7 @@ import ListaFragment from './components/ListaFragment';
 import PropriedadeTipos from './components/PropriedadeTipos';
 import Evento1 from './components/Evento1';
 import Evento2 from './components/Evento2';
+import Evento2_State from './components/Evento2_State';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
       <header className="App-header">
         <div><HelloWorld /></div>
         <p><Evento1 msg="Até mais!" /></p>
+        <p>Evento 2 com State</p>
+        <Evento2_State msg="form" />
         <span><ListaFragment /></span>
         <span>
           <PropriedadeTipos nome="Mirko" idade={25} />
@@ -46,6 +49,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <p>Evento2:</p>
       <Evento2 />
     </div>
   );
