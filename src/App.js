@@ -12,6 +12,7 @@ import Evento1 from './components/Evento1';
 import Evento2 from './components/Evento2';
 import Evento2_State from './components/Evento2_State';
 import EventoRepassaProps from './components/EventoRepassaProps';
+import CounterState from './components/CounterState';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <header className="App-header">
         <div><HelloWorld /></div>
         <EventoRepassaProps />
+        <CounterState startFrom={2} />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
