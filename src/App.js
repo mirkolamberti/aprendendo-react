@@ -2,17 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 
 // Componentes gerados por mim
-import Menu from './components/Menu';
-import HelloWorld from './components/HelloWorld'
-import FrasePropriedades1 from './components/FrasePropriedade1';
-import FrasePropriedades2 from './components/FrasePropriedade2';
-import ListaFragment from './components/ListaFragment';
-import PropriedadeTipos from './components/PropriedadeTipos';
-import Evento1 from './components/Evento1';
-import Evento2 from './components/Evento2';
-import Evento2_State from './components/Evento2_State';
-import EventoRepassaProps from './components/EventoRepassaProps';
-import CounterState from './components/CounterState';
+import Menu from './components/00_Menu';
+import HelloWorld from './components/00_HelloWorld'
+import FrasePropriedades1 from './components/a05_FrasePropriedade1';
+import FrasePropriedades2 from './components/a06_FrasePropriedade2';
+import ListaFragment from './components/a07_ListaFragment';
+import PropriedadeTipos from './components/a08_PropriedadeTipos';
+import Evento1 from './components/a09_Evento1';
+import Evento2 from './components/a09_Evento2';
+import Evento2_State from './components/a10_Evento2_State';
+import EventoRepassaProps from './components/a11_EventoRepassaProps';
+import CounterState from './components/00_CounterState';
 
 function App() {
   return (
