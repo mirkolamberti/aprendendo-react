@@ -6,7 +6,7 @@
  */
 
 // Importo o estilo com nome para definir o div
-import styles from "./FrasePropriedade2.module.css";
+import styles from "./a06_FrasePropriedade2.module.css";
 
 function FrasePropriedades2({texto, ponto}) {
 

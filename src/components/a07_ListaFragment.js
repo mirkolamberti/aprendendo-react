@@ -4,7 +4,7 @@
  *  sem obrigatóriamente inserí-los num tag div
  */
 
-import styles from './ListaFragment.module.css';
+import styles from './a07_ListaFragment.module.css';
 
 function ListaFragment() {
     return(

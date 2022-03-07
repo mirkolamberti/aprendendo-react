@@ -6,7 +6,7 @@
  */
 
 // Importo o estilo para definir o div
-import './FrasePropriedade1.css';
+import './a05_FrasePropriedade1.css';
 
 function FrasePropriedades1(props) {
 
