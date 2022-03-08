@@ -13,11 +13,14 @@ import Evento2 from './components/a09_Evento2';
 import Evento2_State from './components/a10_Evento2_State';
 import EventoRepassaProps from './components/a11_EventoRepassaProps';
 import CounterState from './components/00_CounterState';
+import RenderCondicional from './components/a12_RenderCondicional';
+import RenderizarListas from './components/a13_RenderizarListas';
 
 function App() {
   return (
     <div className="App">
     <Menu />
+    <RenderCondicional />
       <header className="App-header">
         <div><HelloWorld /></div>
         <EventoRepassaProps />
@@ -55,6 +58,7 @@ function App() {
           <PropriedadeTipos nome="Francisco" idade={100}/>
           <PropriedadeTipos />
         </span>
+        <RenderizarListas />
     </div>
   );
 }
