@@ -1,80 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+/**
+ * Aula 15 e sucessivas
+ * Route para gerenciar mais páginas
+ * Atualizações com a versão 6.0
+ * https://reactrouter.com/docs/en/v6/upgrading/v5
+ */
 
-import { useState } from "react";
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Navbar from './comp_15mais/a15_Navbar';
+import Home from './comp_15mais/a15_Home';
+import Empresa from './comp_15mais/a15_Empresa';
+import Contato from './comp_15mais/a15_Contato';
+import ReactIcons from './comp_15mais/a16_ReactIcons';
 
-// Componentes gerados por mim
-import Menu from './components/00_Menu';
-import HelloWorld from './components/00_HelloWorld'
-import FrasePropriedades1 from './components/a05_FrasePropriedade1';
-import FrasePropriedades2 from './components/a06_FrasePropriedade2';
-import ListaFragment from './components/a07_ListaFragment';
-import PropriedadeTipos from './components/a08_PropriedadeTipos';
-import Evento1 from './components/a09_Evento1';
-import Evento2 from './components/a09_Evento2';
-import Evento2_State from './components/a10_Evento2_State';
-import EventoRepassaProps from './components/a11_EventoRepassaProps';
-import CounterState from './components/00_CounterState';
-import RenderCondicional from './components/a12_RenderCondicional';
-import RenderizarListas from './components/a13_RenderizarListas';
-import StateLiftSeuNome from './components/a14_StateLiftSeuNome';
-import StateLiftSaudacao from './components/a14_StateLiftSaudacao';
-
-function App() {
-
-  // aula 14 - State Lift Seu Nome
-  const [nome, setNome] = useState()
-
-  return (
-    <div className="App">
-    <Menu />
-    <RenderCondicional />
-      <header className="App-header">
-        <div><HelloWorld /></div>
-        <EventoRepassaProps />
-        <CounterState startFrom={2} />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <div>
-        <FrasePropriedades1 />
-        <FrasePropriedades1 texto="Bom dia" />
-      </div>
-      <div>
-        <FrasePropriedades2 />
-        <FrasePropriedades2 texto="Bom dia" />
-        <FrasePropriedades2 texto="Boa tarde" ponto="!" />
-      </div>
-      <p><Evento1 msg="Até mais!" /></p>
-      <p>Evento2:</p>
-      <Evento2 />
-      <p>Evento 2 com State</p>
-        <Evento2_State msg="form" />
-        <span><ListaFragment /></span>
-        <span>
-          <PropriedadeTipos nome="Mirko" idade={25} />
-          <PropriedadeTipos nome="Francisco" idade={100}/>
-          <PropriedadeTipos />
-        </span>
-        <RenderizarListas />
-        <hr />
-        <div>
-          <h3>Aula 13 - SetState Seu Nome</h3>
-          <StateLiftSeuNome nomeInput={setNome} />
-          <StateLiftSaudacao nomeOutput={nome} />
-        </div>
-    </div>
-  );
+function App(){
+    return(
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route exact path='/' element={<Home />} />
+                <Route path='/empresa' element={<Empresa />} />
+                <Route path='/contato' element={<Contato />} />
+            </Routes>
+            <ReactIcons />
+        </Router>
+    )
 }
 
 export default App;
