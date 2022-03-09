@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { useState } from "react";
+
 // Componentes gerados por mim
 import Menu from './components/00_Menu';
 import HelloWorld from './components/00_HelloWorld'
@@ -15,8 +17,14 @@ import EventoRepassaProps from './components/a11_EventoRepassaProps';
 import CounterState from './components/00_CounterState';
 import RenderCondicional from './components/a12_RenderCondicional';
 import RenderizarListas from './components/a13_RenderizarListas';
+import StateLiftSeuNome from './components/a14_StateLiftSeuNome';
+import StateLiftSaudacao from './components/a14_StateLiftSaudacao';
 
 function App() {
+
+  // aula 14 - State Lift Seu Nome
+  const [nome, setNome] = useState()
+
   return (
     <div className="App">
     <Menu />
@@ -59,6 +67,12 @@ function App() {
           <PropriedadeTipos />
         </span>
         <RenderizarListas />
+        <hr />
+        <div>
+          <h3>Aula 13 - SetState Seu Nome</h3>
+          <StateLiftSeuNome nomeInput={setNome} />
+          <StateLiftSaudacao nomeOutput={nome} />
+        </div>
     </div>
   );
 }
