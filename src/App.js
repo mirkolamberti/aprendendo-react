@@ -3,6 +3,8 @@
  * Route para gerenciar mais páginas
  * Atualizações com a versão 6.0
  * https://reactrouter.com/docs/en/v6/upgrading/v5
+ * 
+ * Termina aqui a parte teorica. Ver projeto Costs
  */
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
